@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activites.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#E81D1D"
+        android:id="@+id/realtivelayout"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:id="@+id/username_textview"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chip_navigation_bar"
+        android:layout_below="@id/realtivelayout"
+        android:id="@+id/fragment_container"/>
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_alignParentBottom="true"
+       android:background="@drawable/navigation"
+       android:elevation="16dp"
+       android:id="@+id/chip_navigation_bar"
+       android:padding="8dp"
+       app:menu="@menu/navigation_item"
+       tools:ignore="UnusedAttribute" />
+
+
+</RelativeLayout>

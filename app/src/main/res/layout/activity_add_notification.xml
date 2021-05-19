@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/red"
+    android:layout_height="match_parent"
+    tools:context=".activites.Add_Notification_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/cardview_notification">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:id="@+id/textviewNotification_title"
+                android:textSize="22sp"
+                android:text="Create Notification"
+                android:layout_centerHorizontal="true"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviewNotification_title"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:inputType="text"
+                android:hint="Title of Notification"
+                android:autofillHints="no"
+                android:layout_marginEnd="100dp"
+                android:id="@+id/notification_title"
+                tools:ignore="HardcodedText,LabelFor" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/notification_title"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:inputType="text"
+                android:autofillHints="no"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/notification_Description"
+                android:hint="Description of Notification"
+                tools:ignore="HardcodedText,LabelFor" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notification_Description"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:inputType="text"
+                android:hint="Submit By"
+                android:autofillHints="no"
+                android:layout_marginEnd="100dp"
+                android:id="@+id/notification_submit_by"
+                tools:ignore="HardcodedText,LabelFor" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:id="@+id/post_notification"
+                tools:ignore="HardcodedText"
+                android:layout_below="@id/notification_submit_by"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/black"
+                />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notification_submit_by"
+                android:layout_marginTop="50dp"
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

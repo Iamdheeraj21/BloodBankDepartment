@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/home_fragment"
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:iconTint="@color/white"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <item android:id="@+id/searchBloodDonor_fragment"
+        android:title="Search"
+        android:icon="@drawable/search"
+        android:iconTint="@color/white"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <item android:id="@+id/Notification_fragment"
+        android:title="Notification"
+        android:icon="@drawable/notifications"
+        android:iconTint="@color/white"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <item android:id="@+id/profile_fragment"
+        android:title="Profile"
+        android:icon="@drawable/person"
+        android:iconTint="@color/white"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+</menu>
